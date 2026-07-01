@@ -1,0 +1,59 @@
+# ── LangChain Core ───────────────────────────────────────────────────────────
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-anthropic
+
+# ── LangGraph ────────────────────────────────────────────────────────────────
+langgraph
+langgraph-checkpoint          # Built-in checkpointing (MemorySaver, SqliteSaver)
+langgraph-checkpoint-sqlite   # SQLite checkpointer for LangGraph
+langgraph-checkpoint-redis    # Redis checkpointer for LangGraph
+
+# ── LLM Providers ────────────────────────────────────────────────────────────
+openai
+anthropic
+
+# ── Streamlit UI ─────────────────────────────────────────────────────────────
+streamlit
+streamlit-chat                # Chat message components for Streamlit
+
+# ── Redis (persistence / session memory) ─────────────────────────────────────
+redis
+hiredis                       # C-accelerated Redis parser (performance)
+
+# ── SQLite (prototype persistence) ───────────────────────────────────────────
+aiosqlite                     # Async SQLite driver (used by LangGraph SqliteSaver)
+sqlalchemy                    # ORM — useful for structured prototype data
+
+# ── Tools & Search ───────────────────────────────────────────────────────────
+# [FREE - no API key needed]
+duckduckgo-search             # Web search — no API key, no limits
+wikipedia                     # Wikipedia search — completely free
+arxiv                         # Academic paper search (arXiv) — completely free
+yfinance                      # Yahoo Finance — stock/financial data, no API key
+beautifulsoup4                # HTML scraping/parsing — pure library, free
+lxml                          # Fast HTML/XML parser (used with beautifulsoup4)
+requests                      # HTTP requests — standard library wrapper
+pymupdf                       # Fast PDF parsing (import as fitz) — free
+unstructured                  # Parse PDFs, DOCX, HTML, images — open source
+langchain_experimental        # PythonREPLTool for safe local code execution
+
+# [FREE TIER - free API key required, generous limits]
+tavily-python                 # Web search — 1000 free credits/month (recommended)
+exa-py                        # Semantic/neural web search — 1000 free reqs/month
+newsapi-python                # Live news articles — 100 free reqs/day (dev plan)
+
+# ── Vector Store & Embeddings (RAG) ──────────────────────────────────────────
+langchain-postgres            # Official LangChain PGVector integration
+pgvector                      # pgvector Python client
+psycopg2-binary               # PostgreSQL driver (sync)
+asyncpg                       # PostgreSQL driver (async)
+tiktoken                      # Tokenizer for OpenAI models
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv                 # Load secrets from .env
+pydantic                      # Data validation (core to LangChain)
+httpx                         # Async HTTP client
+tenacity                      # Retry logic for API calls
